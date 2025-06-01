@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Flower Gallery</title>
+    <link rel="stylesheet" href="image.css">
+</head>
+<body>
+    <header>
+        <h1>Our Beautiful Flower Gallery</h1>
+        <nav class="filters">
+            <button class="filter-btn active" data-filter="all">All Flowers</button>
+            <button class="filter-btn" data-filter="rose">Roses</button>
+            <button class="filter-btn" data-filter="lily">Lilies</button>
+            <button class="filter-btn" data-filter="sunflower">Sunflowers</button>
+            <button class="filter-btn" data-filter="orchid">Orchids</button>
+        </nav>
+    </header>
+
+    <main class="gallery-grid">
+        <div class="gallery-item" data-type="rose" data-color="red">
+            <img src="flowers images\red_rose.png" alt="Red Rose">
+        </div>
+        <div class="gallery-item" data-type="lily" data-color="white">
+            <img src="flowers images\white_lily.png" alt="White Lily">
+        </div>
+        <div class="gallery-item" data-type="orchid" data-color="purple">
+            <img src="flowers images\purple_orchid.png" alt="Purple Orchid">
+        </div>
+        <div class="gallery-item" data-type="sunflower" data-color="yellow">
+            <img src="flowers images\sunflower.png" alt="Bright Yellow Sunflower">
+        </div>
+        <div class="gallery-item" data-type="rose" data-color="pink">
+            <img src="flowers images\pink_rose.webp" alt="Pink Rose">
+        </div>
+        <div class="gallery-item" data-type="lily" data-color="orange">
+            <img src="flowers images\tiger_lily'.png" alt="Tiger Lily">
+        </div>
+        <div class="gallery-item" data-type="sunflower" data-color="yellow">
+            <img src="flowers images\small_sunflower.png" alt="Minature Sunflower">
+        </div>
+        <div class="gallery-item" data-type="orchid" data-color="blue">
+            <img src="flowers images\blue_orchid.png" alt="Blue Orchid">
+        </div>
+    </main>
+
+    <div class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Enlarged Flower Image">
+        <div class="lightbox-nav prev-btn">&#10094;</div>
+        <div class="lightbox-nav next-btn">&#10095;</div>
+    </div>
+
+    <script src="image.js"></script>
+</body>
+</html>
